@@ -9,6 +9,7 @@
     "author": "Asuniia",
     "license": "MIT",
     "dependencies": {
+        "dotenv": "^16.3.1",
         "node-ssdp": "^4.0.1",
         "upnp-mediarenderer-client": "^1.4.0"
     }

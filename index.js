@@ -1,11 +1,12 @@
 var MediaRendererClient = require("upnp-mediarenderer-client");
 var Client = require("node-ssdp").Client;
 var ssdp_client = new Client();
+require("dotenv").config();
 
 let devices = [];
-var volumes_level = 21; // 0-100% Set the volume level here
-var interval = 1000; // Set the interval here (in ms) to check for new devices and set the volume on all devices
-var enable_logging = true; // Set to false to disable logging
+var volumes_level = process.env.VOLUME; // 0-100% Set the volume level here
+var interval = process.env.INTERVAL; // Set the interval here (in ms) to check for new devices and set the volume on all devices
+var enable_logging = process.env.ENABLE_LOGGING; // Set to false to disable logging
 
 console.log("Searching for MediaRenderer devices on the network...");
 
