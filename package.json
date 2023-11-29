@@ -1,0 +1,15 @@
+{
+    "name": "upnp-volume-control",
+    "version": "1.0.0",
+    "description": "Script qui permet le contrôle du volume sur tout les appareils connectés à votre réseau",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "Asuniia",
+    "license": "MIT",
+    "dependencies": {
+        "node-ssdp": "^4.0.1",
+        "upnp-mediarenderer-client": "^1.4.0"
+    }
+}
